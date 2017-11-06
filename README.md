@@ -1,7 +1,11 @@
+# Extractive Summarizer and Similarity Matcher
+
+
 This is an Extractive Summarizer-Keyword Genrator-Similarity finder for news/trending articles written in Python.  
 	The package enclosed has a MySQl database file (.sql) enclosed where the data is stored.The package has 2 crawlers , the first is written in java and uses selenium api while the other is written in python and uses readability api.The former is used for Google Trends while the latter is used for Google News. The crawled data enters the database from where articles are fetched one at a time. More Sites can be added for crawling by making entries in the 'sites' table of the database.
 
-	The source for implementation of TextRank summarization is: https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf. The relation between text units is Levenshtein Distance. Cosine similarity is calculated for pairs of articles and a similarity factor is calculated for each pair. Based on this similarity factor it is judged whether article is duplicate or not.
+
+The source for implementation of TextRank summarization is: https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf. The relation between text units is Levenshtein Distance. Cosine similarity is calculated for pairs of articles and a similarity factor is calculated for each pair. Based on this similarity factor it is judged whether article is duplicate or not.
 
 Run the generation.py file for execution.
 
